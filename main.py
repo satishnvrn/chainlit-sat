@@ -2,10 +2,7 @@ import chainlit as cl
 import openai
 import os
 
-os.environ["OPENAI_API_KEY"] = "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"
-openai.api_key = "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"
 tokens = 0
-
 
 @cl.on_message
 async def main(message: str):
