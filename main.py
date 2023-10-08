@@ -1,7 +1,12 @@
 import chainlit as cl
 import openai
 import os
+from dotenv import load_dotenv
 
+load_dotenv()
+openai_api_key = os.environ["OPEN_AI_API_KEY"]
+print(openai_api_key)
+openai.api_key = openai_api_key
 tokens = 0
 
 @cl.on_message

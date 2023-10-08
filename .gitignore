@@ -1,3 +1,4 @@
 .vscode
 .chainlit
 __pycache__
+.env
